@@ -179,6 +179,10 @@
                 "opus/celt/entenc.c",
                 "opus/celt/mathops.c",
                 "opus/celt/pitch.c",
+		"opus/celt/arm/armcpu.c",
+		"opus/celt/arm/arm_celt_map.c",
+		"opus/celt/arm/celt_neon_intr.c",
+		"opus/celt/arm/pitch_neon_intr.c",
             ],
             "cflags": [
                 "-fvisibility=hidden",
@@ -200,6 +204,7 @@
                 "opus/celt",
                 "opus/silk",
                 "opus/silk/float",
+		"opus",
             ],
             "defines": ["PIC", "HAVE_CONFIG_H"],
         },
